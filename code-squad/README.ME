@@ -1,12 +1,23 @@
 Roteiro - Protractor
 
-1. Diretorio raiz do projeto, criar arquivos.
+1. Instalação do Protractor
+    npm install -g protractor
+    protractor --version
+    
+2. Com o Protractor instalado, vamos atualizar nosso Webdriver. Para que possamos rodar o Selenium server, execute o comando abaixo:
+    webdriver-manager update
+    
+3. Inicializar o selenium
+  webdriver-manager start
 
+  #Mudar porta do webdriver-manager caso deseje -> webdriver-manager start --seleniumPort 4443
+
+
+4. Criar arquivos iniciais do projeto -> Diretorio raiz do projeto, criar arquivos.
 touch conf.js
 touch spec.js
 
-2. Executar o teste.
-* Rodar o selenium 					-> webdriver-manager start
-* Executar no diretório do projeto  -> protractor conf.js
+5. Executar projeto
+* Executar no diretório do projeto  -> protractor.conf.js
 
-3. Mudar porta do webdriver-manager caso deseje -> webdriver-manager start --seleniumPort 4443
+
